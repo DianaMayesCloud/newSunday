@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: 'Create outer template for ec2 Instance'
+Resources:
+  ec2Instance1:
+    Type: AWS::CloudFormation::Stack
+    Properties: 
+      TemplateURL: ec2-inner-template.yml
+      Parameters: 
+        myInstanceType: t2.micro
