@@ -7,3 +7,18 @@ Resources:
       TemplateURL: ec2-inner-template.yml
       Parameters: 
         myInstanceType: t2.micro
+
+ec2Instance2:
+    Type: AWS::CloudFormation::Stack
+    Properties: 
+      TemplateURL: ec2-inner-template.yml
+      Parameters: 
+        myInstanceType: t2.small
+
+ec2Instance3:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: ec2-inner-template.yml
+      Parameters:
+        myInstanceType: t2.small
+  
